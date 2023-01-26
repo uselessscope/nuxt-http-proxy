@@ -33,8 +33,7 @@ export default defineNuxtModule<ModuleOptions>({
 
     const createMiddleware = (options: Options) => {
       const config = JSON.stringify(options, (key: string, value: any) => {
-        // eslint-disable-next-line no-eval
-        return typeof value === 'function' ? eval(value) : value
+        return typeof value === 'function' ? value() : value
       })
 
       return `
