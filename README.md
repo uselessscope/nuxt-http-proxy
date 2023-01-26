@@ -1,5 +1,15 @@
 # Nuxt HTTP Proxy
 
+## Install
+
+### Command
+
+```console
+~$ npm i nuxt-http-proxy
+
+~$ yarn add nuxt-http-proxy
+```
+
 ## Usage examples
 
 ### Config key
