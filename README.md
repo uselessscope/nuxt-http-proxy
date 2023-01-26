@@ -10,6 +10,23 @@
 ~$ yarn add nuxt-http-proxy
 ```
 
+### Nuxt config
+
+```ts
+export default defineNuxtConfig({
+  modules: ['nuxt-http-proxy'],
+})
+```
+
+### Types
+
+```json
+{
+  "extends": "./.nuxt/tsconfig.json",
+  "types": ["nuxt-http-proxy"]
+}
+```
+
 ## Usage examples
 
 ### Config key
